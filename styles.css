@@ -1,0 +1,45 @@
+body{
+	background-color: black;
+}
+
+body * {
+	font-family: "Bitter", arial, helvetica;
+	text-shadow: 0 0 4px #444;
+}
+
+.info {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.info * {
+	color: #DDD;
+}
+
+.info h1{
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.info p{
+	font-size: 24px;
+}
+.info p.instructions{
+	font-size: 18px;
+	color: #AAA;
+}
+
+.info a{
+	text-decoration: none;
+	border-bottom: 2px dashed #BBB;
+}
+
+.info a:hover{
+     border-bottom: 2px solid hsl(1, 80%, 30%);
+	 color: #DDD;
+}
+.info a:visited{
+	 color: #DDD;
+}
