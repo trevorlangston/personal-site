@@ -1,45 +1,84 @@
-body{
+body {
 	background-color: black;
 }
 
 body * {
+	color: #DDD;
 	font-family: "Bitter", arial, helvetica;
 	text-shadow: 0 0 4px #444;
+    margin: 0;
+    padding: 0;
 }
+
+canvas {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 
 .info {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
 }
 
-.info * {
-	color: #DDD;
-}
-
-.info h1{
+h1 {
 	font-size: 36px;
 	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 }
 
-.info p{
-	font-size: 24px;
+ul {
+    list-style: none;
+    margin-bottom: 1rem;
 }
-.info p.instructions{
+
+li {
+    display: inline-block;
 	font-size: 18px;
-	color: #AAA;
 }
 
-.info a{
+p {
+	font-size: 24px;
+    margin-bottom: 0.5rem
+}
+
+a {
 	text-decoration: none;
-	border-bottom: 2px dashed #BBB;
 }
 
-.info a:hover{
-     border-bottom: 2px solid hsl(1, 80%, 30%);
+a:hover, .fa-github:hover, .fa-linkedin:hover {
+    color: #1e98af !important;
+	text-decoration: none;
+}
+
+a:visited {
 	 color: #DDD;
 }
-.info a:visited{
-	 color: #DDD;
+
+.instructions {
+	color: #AAA;
+	font-size: 18px;
+}
+
+.left-pad {
+    padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
 }
